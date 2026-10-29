@@ -43,9 +43,9 @@ export function Header() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled && !open ? 'bg-ink/80 backdrop-blur-md' : 'bg-transparent'}`}>
-      <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 md:px-10">
-        <a href="#inicio" className="font-display text-3xl leading-none tracking-tight" aria-label="Dias 25 — início" onClick={() => setOpen(false)}>
-          DIAS<span className="text-neon">25</span>
+      <div className="mx-auto flex h-[4.5rem] max-w-[1600px] items-center justify-between px-5 md:px-10">
+        <a href="#inicio" className="flex h-full items-center py-1" aria-label="Barbearia Dias 25 — início" onClick={() => setOpen(false)}>
+          <img src="/logo-dias25.png" alt="Dias Barbershop 25" width={77} height={60} className="h-14 w-auto md:h-[3.75rem]" />
         </a>
 
         <nav aria-label="Principal" className="hidden items-center gap-8 md:flex">
