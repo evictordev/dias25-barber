@@ -24,7 +24,7 @@ export function HeroSection() {
         parallax={6}
         sizes="(min-width: 768px) 46vw, 80vw"
         className="absolute bottom-0 right-0 top-20 -z-10 w-[80%] md:w-[46%]"
-        imgClassName="brightness-90"
+        imgClassName="brightness-90 object-[50%_30%]"
       />
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/60 to-transparent md:via-transparent" aria-hidden />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-gradient-to-t from-ink to-transparent" aria-hidden />

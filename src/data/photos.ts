@@ -19,7 +19,7 @@ const unsplash = (id: string, alt: string): Photo => ({
 })
 
 export const photos = {
-  hero: unsplash('1599351431202-1e0f0137899a', 'Barbeiro de mãos tatuadas finalizando degradê com a máquina'),
+  hero: { src: '/fotos/banner.jpg', alt: 'Cliente com tranças e degradê desenhado, cobrindo o rosto com a mão, diante de parede grafitada' },
   streetStyle: unsplash('1520975954732-35dd22299614', 'Homem de óculos escuros e jaqueta de couro agachado diante de parede de tijolos'),
   clipper: unsplash('1493256338651-d82f7acb2b38', 'Barbeiro tatuado passando máquina na nuca'),
   fade: unsplash('1567894340315-735d7c361db0', 'Barbeiro finalizando degradê em cliente com cabelo cacheado'),
@@ -29,7 +29,7 @@ export const photos = {
   scissors: unsplash('1503951914875-452162b0f3f1', 'Barbeiro aparando barba com tesoura'),
   barber: unsplash('1534297635766-a262cdcb8ee4', 'Barbeiro de óculos e tatuagens cortando cabelo'),
   mask: unsplash('1605497788044-5a32c7078486', 'Barbeiro de máscara secando o cabelo do cliente'),
-  shop: unsplash('1585747860715-2ba37e788b70', 'Interior de barbearia com tijolos aparentes e luminárias'),
+  shop: { src: '/fotos/ambiente.jpg', alt: 'Interior da barbearia com parede grafitada, cadeiras pretas e espelhos com luz de LED' },
   pastaFox: { src: '/fotos/pasta-fox.jpg', alt: 'Três potes de pasta modeladora Fox For Men empilhados sobre bancada escura' },
   cremePistache: { src: '/fotos/creme-pistache.jpg', alt: 'Dois potes de creme modelador Pistache Fox For Men sobre bancada escura' },
   waxToqueSeco: { src: '/fotos/wax-toque-seco.jpg', alt: 'Três potes de wax efeito toque seco Fox For Men empilhados' },

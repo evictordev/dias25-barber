@@ -1,10 +1,8 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { SectionHeading } from './SectionHeading'
-import { ImageReveal } from './ImageReveal'
 import { Marquee } from './Marquee'
 import { Doodle } from './Doodles'
-import { photos } from '../data/photos'
 
 const pillars = ['Corte', 'Atitude', 'Cultura']
 
@@ -29,11 +27,22 @@ export function AboutSection() {
           </ul>
         </div>
 
-        <div className="relative md:col-span-5">
-          <ImageReveal photo={photos.streetStyle} bw parallax={5} className="aspect-[4/5] w-[78%] md:w-[82%]" sizes="(min-width: 768px) 35vw, 80vw" />
-          <ImageReveal photo={photos.tools} parallax={4} delay={0.2} className="absolute -bottom-10 right-0 aspect-square w-[52%] border-4 border-paper md:-bottom-16" sizes="(min-width: 768px) 20vw, 50vw" />
-          <Doodle name="eyes" className="absolute -left-3 -top-6 h-16 w-16 -rotate-12 text-ink md:-left-8" />
-          <span className="absolute right-2 top-2 rotate-6 bg-ink px-3 py-1 font-marker text-lg text-neon md:right-6">no bad cuts</span>
+        <div className="relative md:col-span-5 md:self-center">
+          <div className="relative mx-auto aspect-[4/5] w-[78%] overflow-hidden bg-coal md:mx-0 md:w-[80%]">
+            <video
+              src="/fotos/cultura.mp4"
+              poster="/fotos/cultura-poster.jpg"
+              aria-label="Corte com tranças e degradê desenhado na nuca, feito na barbearia Dias 25"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 h-full w-full origin-[58%_50%] scale-[1.6] object-cover object-[50%_40%]"
+            />
+          </div>
+          <Doodle name="eyes" className="absolute left-[6%] -top-6 h-16 w-16 -rotate-12 text-ink md:-left-8" />
+          <span className="absolute right-[8%] top-2 rotate-6 bg-ink px-3 py-1 font-marker text-lg text-neon md:right-6">no bad cuts</span>
         </div>
       </div>
     </section>
