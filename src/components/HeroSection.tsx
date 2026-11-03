@@ -40,11 +40,6 @@ export function HeroSection() {
       </motion.div>
 
       <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col justify-end px-5 pb-10 pt-28 md:px-10 md:pb-14">
-        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mb-5 flex flex-wrap gap-x-6 gap-y-1 font-mono text-[11px] uppercase tracking-[0.2em] text-paper/70">
-          <span className="text-neon">(01/08)</span>
-          <span>Barbearia / Cultura urbana</span>
-          <span>@diasbarbershop_25</span>
-        </motion.p>
 
         <motion.h1 style={{ y: titleY }} className="relative z-10 font-display uppercase leading-[0.86] text-[clamp(3rem,min(15vw,19svh),11.5rem)]">
           <AnimatedText text={'NÃO É SÓ\nCORTE.'} by="char" delay={0.15} className="block" />

@@ -16,7 +16,7 @@ export function AboutSection() {
 
       <div className="mx-auto grid max-w-[1600px] gap-12 px-5 py-20 md:grid-cols-12 md:gap-8 md:px-10 md:py-32">
         <div className="md:col-span-7 md:pt-10">
-          <SectionHeading index="02" kicker="Manifesto" title={'MAIS QUE UMA\nBARBEARIA.\nUMA CULTURA.'} dark titleClassName="text-[clamp(2.6rem,8.2vw,7rem)]" />
+          <SectionHeading title={'MAIS QUE UMA\nBARBEARIA.\nUMA CULTURA.'} titleClassName="text-[clamp(2.6rem,8.2vw,7rem)]" />
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mt-10 max-w-xl border-l-4 border-ink pl-5 text-lg md:text-xl">
             A Dias 25 nasceu para quem enxerga o corte como uma extensão da própria personalidade. Aqui, estilo, criatividade e atitude fazem parte de cada detalhe.
           </motion.p>

@@ -12,14 +12,14 @@ export function ServicesSection() {
   return (
     <section id="cortes" className="relative bg-ink py-20 md:py-32">
       <div className="mx-auto flex max-w-[1600px] items-end justify-between gap-6 px-5 md:px-10">
-        <SectionHeading index="03" kicker="The cuts" title={'ESCOLHA\nSEU ESTILO.'} />
+        <SectionHeading title={'PRODUTOS QUE FAZEM\nO SEU ESTILO.'} titleClassName="whitespace-nowrap !text-[clamp(1.6rem,10.5vw,5rem)] md:!text-[clamp(2rem,6.5vw,5rem)]" />
         <div className="hidden gap-2 md:flex">
           <button type="button" onClick={() => scrollBy(-1)} aria-label="Serviços anteriores" className="grid h-14 w-14 rotate-180 place-items-center border-2 border-paper/50 transition hover:border-neon hover:bg-neon hover:text-ink"><ArrowRight /></button>
           <button type="button" onClick={() => scrollBy(1)} aria-label="Próximos serviços" className="grid h-14 w-14 place-items-center border-2 border-paper/50 transition hover:border-neon hover:bg-neon hover:text-ink"><ArrowRight /></button>
         </div>
       </div>
 
-      <ul ref={rail} className="scroll-rail mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 md:gap-6 md:px-10" aria-label="Serviços">
+      <ul ref={rail} className="scroll-rail mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 pt-2 md:gap-6 md:px-10" aria-label="Serviços">
         {services.map((s, i) => {
           const light = i % 2 === 1
           return (
@@ -38,7 +38,7 @@ export function ServicesSection() {
                   <h3 className="font-display text-4xl uppercase leading-none">{s.title}</h3>
                   <p className={`text-sm ${light ? 'text-ink/75' : 'text-paper/70'}`}>{s.description}</p>
                   <div className="mt-auto flex items-center justify-between pt-3">
-                    <span className="font-mono text-xs uppercase tracking-[0.2em]">{s.price ?? 'Valor sob consulta'}</span>
+                    <span className="font-mono text-xl uppercase tracking-[0.2em]">{s.price ?? 'Valor sob consulta'}</span>
                     <span className="grid h-11 w-11 place-items-center rounded-full bg-neon text-ink transition duration-300 group-hover:rotate-45"><ArrowUpRight size={20} /></span>
                   </div>
                 </div>

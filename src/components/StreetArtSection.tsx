@@ -47,7 +47,7 @@ export function StreetArtSection() {
       <Sticker speed={1.2} rot={5} className="right-[3%] top-[38%] hidden md:block"><span className="block rotate-3 border-[3px] border-ink bg-ink px-3 py-1 font-marker text-3xl text-neon shadow-[4px_4px_0_#39FF14]">dias 25 ✕ street</span></Sticker>
 
       <div className="relative z-10 mx-auto max-w-5xl px-5 text-center md:px-10">
-        <SectionHeading index="05" kicker="Nossa identidade" title={'A ARTE ESTÁ\nEM TODO LUGAR.'} dark className="[&>p]:justify-center" titleClassName="text-[clamp(2.6rem,10vw,9rem)]" />
+        <SectionHeading title={'A ARTE ESTÁ\nEM TODO LUGAR.'} titleClassName="text-[clamp(2.6rem,10vw,9rem)]" />
         <p className="mx-auto mt-8 max-w-lg bg-paper/80 p-4 text-base font-medium backdrop-blur-[2px] md:text-lg">
           Das paredes cobertas de desenhos aos traços que viram degradê. A Dias 25 é espaço de arte, música e atitude, e cada detalhe conta.
         </p>

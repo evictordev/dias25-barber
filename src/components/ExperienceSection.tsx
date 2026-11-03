@@ -17,7 +17,7 @@ export function ExperienceSection() {
           <span className="absolute -top-3 right-3 rotate-3 bg-neon px-3 py-1 font-marker text-xl text-ink">the vibe</span>
         </div>
         <div className="md:col-span-5 md:order-1 md:self-center">
-          <SectionHeading index="06" kicker="The vibe" title={'O AMBIENTE\nFAZ PARTE\nDO ESTILO.'} titleClassName="text-[clamp(2.4rem,7vw,6rem)]" />
+          <SectionHeading title={'O AMBIENTE\nFAZ PARTE\nDO ESTILO.'} titleClassName="text-[clamp(2.4rem,7vw,6rem)]" />
           <ul className="mt-10 grid grid-cols-2 gap-x-4 border-t border-paper/20">
             {traits.map((t, i) => (
               <li key={t} className="flex items-baseline gap-2 border-b border-paper/20 py-3 font-mono text-xs uppercase tracking-[0.15em]">

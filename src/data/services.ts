@@ -10,9 +10,9 @@ export interface Service {
 }
 
 export const services: Service[] = [
-  { id: 'corte', title: 'Corte masculino', description: 'Tesoura e máquina, do clássico ao ousado. Saia daqui com a cara que você queria.', photo: photos.pastaFox },
-  { id: 'fade', title: 'Degradê / Fade', description: 'Transição limpa, linha na régua. O degradê que virou assinatura da casa.', photo: photos.cremePistache },
-  { id: 'corte-barba', title: 'Corte + Barba', description: 'O combo completo: visual fechado da cabeça ao queixo.', photo: photos.waxToqueSeco },
-  { id: 'barba', title: 'Barba', description: 'Contorno, volume e acabamento com toalha quente e pincel.', photo: photos.pastaPremium },
-  { id: 'tranças', title: 'Tranças e estilos', description: 'Tranças, desenhos e estilos personalizados feitos sob medida.', photo: photos.gelStone },
+  { id: 'produto1', title: 'Pasta Orange', description: 'Modelagem na medida, brilho natural e estilo sem esforço. Seu visual no controle, do começo ao fim do dia.', photo: photos.pastaFox, price: 'R$ 30' },
+  { id: 'produto2', title: 'Creme Pistache', description: 'Leveza, movimento e acabamento seco. Para quem prefere um visual natural, sem abrir mão da personalidade.', photo: photos.cremePistache, price: 'R$ 30' },
+  { id: 'produto3', title: 'Wax Toque Seco', description: 'Fixação forte, acabamento seco e liberdade para modelar. Controle dos fios sem aquele aspecto endurecido.', photo: photos.waxToqueSeco, price: 'R$ 30' },
+  { id: 'produto4', title: 'Pasta Premium', description: 'Fixação extraforte, brilho natural e acabamento de respeito. Para um penteado que mantém sua identidade.', photo: photos.pastaPremium, price: 'R$ 30' },
+  { id: 'produto5', title: 'Mega Stone', description: 'Controle máximo e brilho natural para um penteado marcante. Feito para quem não deixa o estilo sair do lugar.', photo: photos.gelStone, price: 'R$ 30' },
 ]

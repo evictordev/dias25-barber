@@ -37,7 +37,7 @@ export function GallerySection() {
   return (
     <section id="galeria" className="bg-ink py-20 md:py-32">
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
-        <SectionHeading index="04" kicker="Fresh cuts" title={'O CORTE FALA\nPOR SI.'} />
+        <SectionHeading title={'O CORTE FALA\nPOR SI.'} />
         <div className="mt-12 grid grid-flow-dense auto-rows-[44vw] grid-cols-2 gap-2 md:auto-rows-[17vw] md:grid-cols-4 md:gap-4">
           {gallery.map((g, i) => (
             <button

@@ -81,7 +81,6 @@ export function Header() {
             <nav aria-label="Menu mobile" className="flex flex-col">
               {site.nav.map((l, i) => (
                 <motion.a key={l.href} href={l.href} onClick={() => setOpen(false)} initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 + i * 0.06 }} className="flex items-baseline gap-4 border-b border-ink/20 py-3 font-display text-6xl uppercase leading-none">
-                  <span className="font-mono text-xs">0{i + 1}</span>
                   {l.label}
                 </motion.a>
               ))}

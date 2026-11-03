@@ -8,7 +8,6 @@ export function BookingSection() {
   return (
     <section id="agendar" className="grain relative overflow-hidden bg-neon text-ink">
       <div className="mx-auto max-w-[1600px] px-5 py-24 md:px-10 md:py-40">
-        <p className="mb-5 font-mono text-xs uppercase tracking-[0.2em]">07 / Agendamento</p>
         <AnimatedText as="h2" text={'SEU PRÓXIMO\nVISUAL COMEÇA\nAQUI.'} className="font-display uppercase leading-[0.88] text-[clamp(3rem,11.5vw,10.5rem)]" />
         <div className="mt-10 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <p className="max-w-sm text-lg font-medium md:text-xl">Escolha seu horário e venha viver a experiência Dias 25.</p>
