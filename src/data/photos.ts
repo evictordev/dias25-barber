@@ -30,5 +30,10 @@ export const photos = {
   barber: unsplash('1534297635766-a262cdcb8ee4', 'Barbeiro de óculos e tatuagens cortando cabelo'),
   mask: unsplash('1605497788044-5a32c7078486', 'Barbeiro de máscara secando o cabelo do cliente'),
   shop: unsplash('1585747860715-2ba37e788b70', 'Interior de barbearia com tijolos aparentes e luminárias'),
+  pastaFox: { src: '/fotos/pasta-fox.jpg', alt: 'Três potes de pasta modeladora Fox For Men empilhados sobre bancada escura' },
+  cremePistache: { src: '/fotos/creme-pistache.jpg', alt: 'Dois potes de creme modelador Pistache Fox For Men sobre bancada escura' },
+  waxToqueSeco: { src: '/fotos/wax-toque-seco.jpg', alt: 'Três potes de wax efeito toque seco Fox For Men empilhados' },
+  pastaPremium: { src: '/fotos/pasta-premium.jpg', alt: 'Três potes de pasta premium Fox For Men com manteiga de karité' },
+  gelStone: { src: '/fotos/gel-stone.jpg', alt: 'Três potes de gel Stone Fox For Men, fixação extra forte' },
   tools: unsplash('1621605815971-fbc98d665033', 'Máquinas, tesouras e pomadas sobre a bancada'),
 } satisfies Record<string, Photo>

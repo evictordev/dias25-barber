@@ -32,8 +32,7 @@ export function ServicesSection() {
                 className={`group flex h-full flex-col border-2 transition duration-300 hover:-translate-y-2 ${light ? 'border-paper bg-paper text-ink' : 'border-paper/25 bg-coal text-paper hover:border-neon'}`}
               >
                 <div className="relative">
-                  <ImageReveal photo={s.photo} bw={!light} className="aspect-[4/5]" imgClassName="group-hover:scale-105 group-hover:grayscale-0 group-focus-visible:grayscale-0" sizes="(min-width: 768px) 26rem, 78vw" />
-                  <span className="pointer-events-none absolute left-3 top-1 font-display text-8xl leading-none text-neon mix-blend-normal drop-shadow-[0_2px_0_#0A0A0A]">0{i + 1}</span>
+                  <ImageReveal photo={s.photo} className="aspect-[4/5]" imgClassName="group-hover:scale-105" sizes="(min-width: 768px) 26rem, 78vw" />
                 </div>
                 <div className="flex flex-1 flex-col gap-3 p-5">
                   <h3 className="font-display text-4xl uppercase leading-none">{s.title}</h3>
