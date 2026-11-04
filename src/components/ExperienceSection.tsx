@@ -13,7 +13,7 @@ export function ExperienceSection() {
       <div className="relative mx-auto grid max-w-[1600px] gap-12 px-5 md:grid-cols-12 md:px-10">
         <div className="relative md:col-span-7 md:order-2">
           <ImageReveal photo={photos.shop} parallax={6} className="aspect-[4/3] w-full" sizes="(min-width: 768px) 58vw, 100vw" />
-          <ImageReveal photo={photos.mask} bw parallax={4} delay={0.2} className="absolute -bottom-8 -left-2 aspect-[3/4] w-[38%] border-4 border-coal md:-left-14" sizes="(min-width: 768px) 22vw, 40vw" />
+          <ImageReveal photo={photos.bancada} parallax={4} delay={0.2} className="absolute -bottom-8 -left-2 aspect-[3/4] w-[38%] border-4 border-coal md:-left-14" sizes="(min-width: 768px) 22vw, 40vw" />
           <span className="absolute -top-3 right-3 rotate-3 bg-neon px-3 py-1 font-marker text-xl text-ink">the vibe</span>
         </div>
         <div className="md:col-span-5 md:order-1 md:self-center">
