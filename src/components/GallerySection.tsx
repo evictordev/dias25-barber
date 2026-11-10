@@ -13,7 +13,7 @@ const AUTO_MS = 5000
  * dividir a largura em 1, 2, 3 ou 4 partes e centralizar a última linha.
  * Celular: 2 colunas.
  *   1 item   -> um quadro centralizado, de tamanho médio
- *   2 itens  -> dois quadros lado a lado (mais baixos que os de 1 item)
+ *   2 itens  -> no celular, empilhados em largura total; no desktop, lado a lado
  *   3 itens  -> três quadros iguais (no celular, o 1º vira destaque)
  *   4 itens  -> quatro quadros iguais
  *   5, 9...  -> 1º em destaque 2x2 e o resto preenchendo (fecha sem buraco)
@@ -21,7 +21,7 @@ const AUTO_MS = 5000
  */
 const slotLayout = (i: number, n: number) => {
   if (n === 1) return 'col-span-2 row-span-2 w-[68%] justify-self-center md:col-span-8 md:col-start-9 md:row-span-2 md:w-auto'
-  if (n === 2) return 'md:col-span-12 md:row-span-2'
+  if (n === 2) return 'col-span-2 row-span-2 md:col-span-12 md:row-span-2'
   if (n === 3) return `${i === 0 ? 'col-span-2 row-span-2 ' : ''}md:col-span-8 md:row-span-2`
   if (n === 4) return 'md:col-span-6 md:row-span-2'
   if ((n + 3) % 4 === 0) return i === 0 ? 'col-span-2 row-span-2 md:col-span-12 md:row-span-2' : 'md:col-span-6'
